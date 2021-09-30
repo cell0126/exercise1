@@ -1,0 +1,30 @@
+---
+title: "Exercise1b"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Sampling from the normal distribution
+
+First we sample 100 points from a lognormal distribution with $\mu=1$ and $\sigma=0.25$.
+
+```{r}
+x<-rlnorm(100,1,0.25)
+```
+
+## Histograms
+Now we plot two histograms of our samples. The first one is in linear scale and the second one in logarithmic scale.
+
+```{r}
+h<-hist(x,breaks=100)
+z<-log(x)
+h2<-hist(z,breaks=100)
+```
+
+The mean of the samples is `r mean(x)
+`
+and the variance of the samples is `r var(x)`.
+
