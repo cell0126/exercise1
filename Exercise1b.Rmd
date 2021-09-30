@@ -1,5 +1,6 @@
 ---
 title: "Exercise1b"
+author: Wiona Glänzer
 output: html_document
 ---
 
